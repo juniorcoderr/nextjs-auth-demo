@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### 🔐 Next.js Authentication Practice (Pages Router)
 
-## Getting Started
+This project is a practical deep-dive into building and understanding **authentication workflows using the Pages Router in Next.js**. It is designed to help developers learn how authentication works under the hood in Next.js applications, particularly with custom logic, session handling, and secure API route interactions.
 
-First, run the development server:
+- 🔐 User login and signup APIs
+- 📄 Protected pages and session handling
+- 🌐 API route-based authentication
+- 🧩 Modular component structure for auth-related UI
+- ⚙️ Use of environment variables for secure configuration
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### 🚀 Key Features:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Custom Authentication System**  
+  Implements a username/email and password-based login system using secure hashing techniques and custom backend API routes.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Session Management**  
+  Uses cookies or token-based mechanisms to manage user sessions, with logic to protect certain routes and pages from unauthorized access.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **Protected Routes**  
+  Demonstrates how to create pages that are only accessible to authenticated users and how to redirect unauthenticated users to the login page.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Backend API Integration**  
+  Includes backend routes under `pages/api` for login, registration, and user management, allowing seamless communication between frontend and backend.
 
-## Learn More
+- **Component-based Structure**  
+  Organized modularly with components for authentication forms, error displays, and user-related UI — encouraging clean code and reusability.
 
-To learn more about Next.js, take a look at the following resources:
+- **Environment Configuration**  
+  Shows how to use `.env.local` for storing sensitive keys, and how to access them securely inside both frontend and backend code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Folder Structure Practice**  
+  Structured to follow best practices with separate directories for `pages`, `components`, `lib`, and `api` logic to mimic real-world applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Basic User Profile Handling**  
+  Includes a simple user dashboard/profile section after login, demonstrating how to fetch and display protected user data.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 📁 Folder Highlights:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `pages/api/auth` – Backend logic for login/signup functionality  
+- `components/auth` – Form components for login and signup  
+- `lib` – Utility functions like password hashing, token generation, etc.  
+- `pages` – Page-level components with both public and protected pages
+
+---
+
+#### 🧠 Learning Outcomes:
+
+By working through this project, you’ll understand how to:
+
+- Set up authentication from scratch in a Next.js app using the Pages Router
+- Secure API routes and manage user sessions
+- Create and protect dynamic routes
+- Use modular React components in an auth-driven flow
+- Apply environment configuration for sensitive data handling
+
+---
+
+Whether you're a beginner getting into full-stack development or an intermediate developer strengthening your Next.js skills, this repository serves as a helpful reference and practice playground.
